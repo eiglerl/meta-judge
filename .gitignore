@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+.ipynb_checkpoints/
+
+# Data directories — pre-computed results are archived in data/correlations.zip
+# Generated datasets (damaged texts) are not distributed (see README)
+src/generation/corr_results/
+src/generation/inspection_results/
+src/generation/test/
+
+# Unzipped data/ directory (use data/correlations.zip instead)
+data/correlations/
+
+# Cluster logs
+*.log
+slurm-*.out
+slurm-*.err
+logs/
+
+# Checkpoints and model weights
+*.safetensors
+*.bin
+*.pt
+checkpoints/
